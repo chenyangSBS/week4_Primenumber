@@ -7,18 +7,9 @@ public class Palindrome {
         int x; // 待校验的输入数字
         Scanner scanner = new Scanner(System.in);
         x = scanner.nextInt();
-        boolean status;
-        if(x < 0){
-            status = false;
-            System.out.println(status);
-        }
-        int cur = 0;
-        int num = x;
-        while(num != 0) {
-            cur = cur * 10 + num % 10;
-            num /= 10;
-        }
-        status = (cur==x);
+        boolean status = false;
+        // 你的代码逻辑
+
         System.out.println(status);
     }
 }
